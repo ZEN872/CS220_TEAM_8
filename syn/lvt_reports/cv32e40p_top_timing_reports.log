@@ -1,0 +1,107 @@
+Warning: Design 'cv32e40p_tb_wrapper' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cv32e40p_tb_wrapper
+Version: T-2022.03-SP3
+Date   : Sat May 24 15:13:04 2025
+****************************************
+
+Operating Conditions: tt0p78v25c   Library: saed32lvt_tt0p78v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_CS_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_carry_q_reg
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cv32e40p_core      70000                 saed32lvt_tt0p78v25c
+  cv32e40p_mult      16000                 saed32lvt_tt0p78v25c
+  cv32e40p_mult_DP_OP_97_123_4453_3
+                     8000                  saed32lvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_CS_reg_0_/CLK (DFFARX1_LVT)
+                                                          0.00       0.00 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_CS_reg_0_/Q (DFFARX1_LVT)
+                                                          0.14       0.14 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U508/Y (NAND3X0_LVT)
+                                                          0.04       0.18 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U232/Y (NAND3X0_LVT)
+                                                          0.05       0.23 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U233/Y (OA21X1_LVT)
+                                                          0.09       0.32 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U218/Y (AND2X1_LVT)
+                                                          0.08       0.40 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U217/Y (INVX0_LVT)
+                                                          0.06       0.46 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U209/Y (AO22X1_LVT)
+                                                          0.08       0.53 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/I1[0] (cv32e40p_mult_DP_OP_97_123_4453_3)
+                                                          0.00       0.53 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U1137/Y (INVX1_LVT)
+                                                          0.06       0.59 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U1000/Y (NOR2X2_LVT)
+                                                          0.12       0.70 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U605/CO (FADDX1_LVT)
+                                                          0.13       0.83 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U590/CO (FADDX1_LVT)
+                                                          0.12       0.96 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U575/CO (FADDX1_LVT)
+                                                          0.11       1.07 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U560/CO (FADDX1_LVT)
+                                                          0.11       1.18 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U544/CO (FADDX1_LVT)
+                                                          0.12       1.30 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U527/S (FADDX1_LVT)
+                                                          0.17       1.47 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U526/S (FADDX1_LVT)
+                                                          0.17       1.64 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U235/Y (NOR2X0_LVT)
+                                                          0.08       1.72 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U232/Y (OAI21X2_LVT)
+                                                          0.11       1.83 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U230/Y (AOI21X1_LVT)
+                                                          0.07       1.90 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U228/Y (OAI21X2_LVT)
+                                                          0.09       1.99 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U1287/Y (AO21X1_LVT)
+                                                          0.07       2.06 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U1285/Y (AO21X1_LVT)
+                                                          0.08       2.14 r
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U1304/Y (XOR2X2_LVT)
+                                                          0.11       2.25 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/O1[32] (cv32e40p_mult_DP_OP_97_123_4453_3)
+                                                          0.00       2.25 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U289/Y (AO22X1_LVT)
+                                                          0.08       2.33 f
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_carry_q_reg/D (DFFARX1_LVT)
+                                                          0.01       2.34 f
+  data arrival time                                                  2.34
+
+  clock clk_i (rise edge)                                 2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.20       1.80
+  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_carry_q_reg/CLK (DFFARX1_LVT)
+                                                          0.00       1.80 r
+  library setup time                                     -0.05       1.75
+  data required time                                                 1.75
+  --------------------------------------------------------------------------
+  data required time                                                 1.75
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.59
+
+
+1

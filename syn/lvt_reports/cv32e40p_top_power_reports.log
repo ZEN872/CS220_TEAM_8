@@ -1,0 +1,111 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : cv32e40p_tb_wrapper
+Version: T-2022.03-SP3
+Date   : Sat May 24 15:13:06 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_tt0p78v25c (File: /usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt0p78v25c.db)
+
+
+Operating Conditions: tt0p78v25c   Library: saed32lvt_tt0p78v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+cv32e40p_tb_wrapper    70000             saed32lvt_tt0p78v25c
+cv32e40p_top           70000             saed32lvt_tt0p78v25c
+cv32e40p_core          70000             saed32lvt_tt0p78v25c
+cv32e40p_sleep_unit    ForQA             saed32lvt_tt0p78v25c
+cv32e40p_if_stage      8000              saed32lvt_tt0p78v25c
+cv32e40p_ex_stage      35000             saed32lvt_tt0p78v25c
+cv32e40p_load_store_unit
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_cs_registers  16000             saed32lvt_tt0p78v25c
+cv32e40p_clock_gate    ForQA             saed32lvt_tt0p78v25c
+cv32e40p_aligner       8000              saed32lvt_tt0p78v25c
+cv32e40p_compressed_decoder
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_alu           16000             saed32lvt_tt0p78v25c
+cv32e40p_mult          16000             saed32lvt_tt0p78v25c
+cv32e40p_popcnt        ForQA             saed32lvt_tt0p78v25c
+cv32e40p_ff_one        ForQA             saed32lvt_tt0p78v25c
+cv32e40p_alu_div       8000              saed32lvt_tt0p78v25c
+cv32e40p_load_store_unit_DP_OP_63_122_7246_0
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_mult_DP_OP_98_124_2021_0
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_alu_DW01_add_0
+                       ForQA             saed32lvt_tt0p78v25c
+cv32e40p_alu_DW01_add_1
+                       ForQA             saed32lvt_tt0p78v25c
+cv32e40p_alu_div_DW_cmp_0
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_alu_div_DW01_sub_0
+                       ForQA             saed32lvt_tt0p78v25c
+cv32e40p_popcnt_DP_OP_94_125_7206_0
+                       ForQA             saed32lvt_tt0p78v25c
+cv32e40p_mult_DP_OP_95_131_2234_0
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_mult_DP_OP_96_132_3293_0
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_alu_div_DP_OP_19_133_8438_1
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_4
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_6
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_8
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_aligner_DP_OP_75_127_9190_1
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_mult_DP_OP_97_123_4453_3
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_if_stage_DW01_add_2
+                       8000              saed32lvt_tt0p78v25c
+
+
+Global Operating Voltage = 0.78 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  = 660.6603 uW  (100%)
+                         ---------
+Total Dynamic Power    = 660.6603 uW  (100%)
+
+Cell Leakage Power     =   1.1116 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000          657.8368        8.9891e+08        1.5567e+03  (  87.84%)  i
+register           0.0000            1.6754        1.2779e+08          129.4620  (   7.30%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000            1.1457        8.4909e+07           86.0551  (   4.86%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW       660.6579 uW     1.1116e+09 pW     1.7723e+03 uW
+1

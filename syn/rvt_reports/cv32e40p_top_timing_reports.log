@@ -1,0 +1,133 @@
+Warning: Design 'cv32e40p_tb_wrapper' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cv32e40p_tb_wrapper
+Version: T-2022.03-SP3
+Date   : Sat May 24 15:09:54 2025
+****************************************
+
+Operating Conditions: tt0p78v25c   Library: saed32rvt_tt0p78v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: cv32e40p_top_i/core_i/if_stage_i/aligner_i/hwlp_update_pc_q_reg
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: cv32e40p_top_i/core_i/if_stage_i/aligner_i/pc_q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cv32e40p_core      70000                 saed32rvt_tt0p78v25c
+  cv32e40p_aligner   8000                  saed32rvt_tt0p78v25c
+  cv32e40p_aligner_DP_OP_75_127_9190_0
+                     ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/hwlp_update_pc_q_reg/CLK (DFFARX1_RVT)
+                                                          0.00       0.00 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/hwlp_update_pc_q_reg/Q (DFFARX1_RVT)
+                                                          0.19       0.19 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/U253/Y (OR2X1_RVT)
+                                                          0.09       0.28 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/U17/Y (AO21X1_RVT)
+                                                          0.10       0.37 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/U6/Y (OAI22X2_RVT)
+                                                          0.14       0.51 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/I2[2] (cv32e40p_aligner_DP_OP_75_127_9190_0)
+                                                          0.00       0.51 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U30/CO (FADDX1_RVT)
+                                                          0.16       0.67 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U45/C1 (HADDX2_RVT)
+                                                          0.10       0.76 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U35/C1 (HADDX2_RVT)
+                                                          0.09       0.86 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U40/C1 (HADDX2_RVT)
+                                                          0.09       0.95 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U39/C1 (HADDX2_RVT)
+                                                          0.09       1.04 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U36/C1 (HADDX2_RVT)
+                                                          0.09       1.14 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U42/C1 (HADDX2_RVT)
+                                                          0.09       1.23 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U41/C1 (HADDX2_RVT)
+                                                          0.09       1.32 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U37/C1 (HADDX2_RVT)
+                                                          0.09       1.42 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U44/C1 (HADDX2_RVT)
+                                                          0.09       1.51 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U43/C1 (HADDX2_RVT)
+                                                          0.09       1.60 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U38/C1 (HADDX2_RVT)
+                                                          0.09       1.70 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U60/C1 (HADDX2_RVT)
+                                                          0.09       1.79 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U52/C1 (HADDX2_RVT)
+                                                          0.09       1.88 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U51/C1 (HADDX2_RVT)
+                                                          0.09       1.98 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U61/C1 (HADDX2_RVT)
+                                                          0.09       2.07 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U62/C1 (HADDX2_RVT)
+                                                          0.09       2.16 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U46/C1 (HADDX2_RVT)
+                                                          0.09       2.26 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U47/C1 (HADDX2_RVT)
+                                                          0.09       2.35 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U48/C1 (HADDX2_RVT)
+                                                          0.09       2.44 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U49/C1 (HADDX2_RVT)
+                                                          0.09       2.53 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U50/C1 (HADDX2_RVT)
+                                                          0.09       2.63 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U59/C1 (HADDX2_RVT)
+                                                          0.09       2.72 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U58/C1 (HADDX2_RVT)
+                                                          0.09       2.81 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U54/C1 (HADDX2_RVT)
+                                                          0.09       2.91 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U53/C1 (HADDX2_RVT)
+                                                          0.09       3.00 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U55/C1 (HADDX2_RVT)
+                                                          0.09       3.09 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U57/C1 (HADDX2_RVT)
+                                                          0.09       3.19 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U56/C1 (HADDX2_RVT)
+                                                          0.09       3.28 r
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/U66/SO (HADDX1_RVT)
+                                                          0.13       3.41 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/DP_OP_75_127_9190/O1[31] (cv32e40p_aligner_DP_OP_75_127_9190_0)
+                                                          0.00       3.41 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/U70/Y (AO22X1_RVT)
+                                                          0.08       3.49 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/U201/Y (OR2X1_RVT)
+                                                          0.07       3.56 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/U163/Y (AO21X1_RVT)
+                                                          0.06       3.63 f
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/pc_q_reg_31_/D (DFFARX1_RVT)
+                                                          0.01       3.64 f
+  data arrival time                                                  3.64
+
+  clock clk_i (rise edge)                                 2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.20       1.80
+  cv32e40p_top_i/core_i/if_stage_i/aligner_i/pc_q_reg_31_/CLK (DFFARX1_RVT)
+                                                          0.00       1.80 r
+  library setup time                                     -0.08       1.72
+  data required time                                                 1.72
+  --------------------------------------------------------------------------
+  data required time                                                 1.72
+  data arrival time                                                 -3.64
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.92
+
+
+1
