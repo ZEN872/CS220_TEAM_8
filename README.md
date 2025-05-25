@@ -18,7 +18,8 @@
 - Then run the command: **./sim**
 - Then you will have to export the .vcd file generated to your local machine. **The Reason we have to move it to our local machine is that Verdi can not read the file, and the Bender server does not have gtkwave.**
 - Then run the following command on your local machine: **gtkwave "name of file".vcd**
-**If you do not have GTKwave installed, this is the command to install on your local machine: sudo apt install gtkwave**
+  
+**WARNING: If you do not have GTKwave installed, this is the command to install on your local machine: sudo apt install gtkwave**
 
 
 ## How to run syn: 
