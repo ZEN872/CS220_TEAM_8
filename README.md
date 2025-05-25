@@ -33,5 +33,5 @@
 - Enter the command: **dc_shell**
 - Then, once in the dc shell enter the command: **source syn.tcl**
 
-**WARNING: IF you get warnings that stop the syn, then just press the ENTER key repeatly until the warning go away**
+**WARNING: IF you get warnings that stop the syn, then just press the ENTER key repeatedly until the warning goes away**
   
