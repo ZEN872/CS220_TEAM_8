@@ -21,8 +21,8 @@
 
 **EXAMPLE:** set HOME "/home/cegrad/imaga008/CS220_CORE_WK_8"
 
-- Enter dc_shell
-- Enter source syn.tcl
+- Enter the command: **dc_shell**
+- Then once in the dc shell enter the command: **source syn.tcl**
 
 **(IF you get warnings that stop the syn, then just press the ENTER key repeatly until the warning go away)**
   
