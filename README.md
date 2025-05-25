@@ -23,5 +23,6 @@
 
 - Enter dc_shell
 - Enter source syn.tcl
-**IF you get warnings that stop the syn, then just press the ENTER key repeatly until the warning go away**
+
+**(IF you get warnings that stop the syn, then just press the ENTER key repeatly until the warning go away)**
   
