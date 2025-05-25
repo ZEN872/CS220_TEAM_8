@@ -12,8 +12,14 @@
 **Example:** /home/cegrad/imaga008/CS220_TEAM_8/cv32e40p_fpu_manifest.flist 
 
 - Then run this command to launch the sim: vcs -sverilog "Name of top file".sv -f  "directory cv32e40p_fpu_manifest.flist" -full64 -P /usr/local/synopsys/verdi/V-2023.12-SP2-5/share/PLI/VCS/LINUX64/novas.tab /usr/local/synopsys/verdi/V-2023.12-SP2-5/share/PLI/VCS/LINUX64/pli.a
-- 
+  
 **EXAMPLE:** vcs -sverilog cv32e40p_top_tb.sv -f /home/cegrad/imaga008/CS220_TEAM_8/cv32e40p_fpu_manifest.flist -full64 -P /usr/local/synopsys/verdi/V-2023.12-SP2-5/share/PLI/VCS/LINUX64/novas.tab /usr/local/synopsys/verdi/V-2023.12-SP2-5/share/PLI/VCS/LINUX64/pli.a
+
+- Then run the command: **./sim**
+- Then you will have to export the .vcd file generated to your local machine. **The Reason we have to move it to our local machine is that Verdi can not read the file, and the Bender server does not have gtkwave.**
+- Then run the following command on your local machine: **gtkwave "name of file".vcd**
+**If you do not have GTKwave installed, this is the command to install on your local machine: sudo apt install gtkwave**
+
 
 ## How to run syn: 
 - Go to the syn directory 
