@@ -21,7 +21,7 @@
   
 **WARNING: If you do not have GTKwave installed, this is the command to install on your local machine:** 
 
-sudo apt install gtkwave
+- sudo apt install gtkwave
 
 
 ## How to run syn: 
