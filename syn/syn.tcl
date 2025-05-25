@@ -93,9 +93,9 @@ read_sverilog ${DESIGN_RTL_DIR}/cv32e40p_top.sv
 #read_sverilog ${DESIGN_RTL_DIR}/cv32e40p_top_moded.sv
 
 
-read_sverilog ${DESIGN_RTL_DIR}/../bhv/cv32e40p_sim_clock_gate.sv
-read_sverilog ${DESIGN_RTL_DIR}/../bhv/include/cv32e40p_tracer_pkg.sv
-read_sverilog ${DESIGN_RTL_DIR}/../bhv/cv32e40p_tb_wrapper.sv
+#read_sverilog ${DESIGN_RTL_DIR}/../bhv/cv32e40p_sim_clock_gate.sv
+#read_sverilog ${DESIGN_RTL_DIR}/../bhv/include/cv32e40p_tracer_pkg.sv
+#read_sverilog ${DESIGN_RTL_DIR}/../bhv/cv32e40p_tb_wrapper.sv
 
 #------------------------------------------------------------
 # Elaborate and Link Design
