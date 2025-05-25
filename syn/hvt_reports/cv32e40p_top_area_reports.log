@@ -1,33 +1,33 @@
-Warning: Design 'cv32e40p_tb_wrapper' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'cv32e40p_top' has '4' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : area
-Design : cv32e40p_tb_wrapper
+Design : cv32e40p_top
 Version: T-2022.03-SP3
-Date   : Sat May 24 15:16:11 2025
+Date   : Sat May 24 22:14:28 2025
 ****************************************
 
 Library(s) Used:
 
     saed32hvt_tt0p78v25c (File: /usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_tt0p78v25c.db)
 
-Number of ports:                         6880
-Number of nets:                         20568
-Number of cells:                        13161
-Number of combinational cells:          11871
+Number of ports:                         6497
+Number of nets:                         19065
+Number of cells:                        11757
+Number of combinational cells:          10485
 Number of sequential cells:               779
 Number of macros/black boxes:               0
-Number of buf/inv:                       1508
+Number of buf/inv:                        961
 Number of references:                       1
 
-Combinational area:              31960.387034
-Buf/Inv area:                     2015.361931
-Noncombinational area:            5521.278496
+Combinational area:              29158.703635
+Buf/Inv area:                     1248.863624
+Noncombinational area:            5514.924896
 Macro/Black Box area:                0.000000
-Net Interconnect area:           15526.622705
+Net Interconnect area:           13932.446352
 
-Total cell area:                 37481.665530
-Total area:                      53008.288234
+Total cell area:                 34673.628531
+Total area:                      48606.074882
 
 Information: This design contains black box (unknown) components. (RPT-8)
 1

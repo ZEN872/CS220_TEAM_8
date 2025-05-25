@@ -6,9 +6,9 @@ Warning: Design has unannotated black box outputs. (PWR-428)
 ****************************************
 Report : power
         -analysis_effort low
-Design : cv32e40p_tb_wrapper
+Design : cv32e40p_top
 Version: T-2022.03-SP3
-Date   : Sat May 24 15:13:06 2025
+Date   : Sat May 24 22:04:18 2025
 ****************************************
 
 
@@ -22,16 +22,14 @@ Wire Load Model Mode: enclosed
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-cv32e40p_tb_wrapper    70000             saed32lvt_tt0p78v25c
-cv32e40p_top           70000             saed32lvt_tt0p78v25c
-cv32e40p_core          70000             saed32lvt_tt0p78v25c
+cv32e40p_top           35000             saed32lvt_tt0p78v25c
+cv32e40p_core          35000             saed32lvt_tt0p78v25c
 cv32e40p_sleep_unit    ForQA             saed32lvt_tt0p78v25c
 cv32e40p_if_stage      8000              saed32lvt_tt0p78v25c
 cv32e40p_ex_stage      35000             saed32lvt_tt0p78v25c
 cv32e40p_load_store_unit
                        8000              saed32lvt_tt0p78v25c
-cv32e40p_cs_registers  16000             saed32lvt_tt0p78v25c
-cv32e40p_clock_gate    ForQA             saed32lvt_tt0p78v25c
+cv32e40p_cs_registers  8000              saed32lvt_tt0p78v25c
 cv32e40p_aligner       8000              saed32lvt_tt0p78v25c
 cv32e40p_compressed_decoder
                        8000              saed32lvt_tt0p78v25c
@@ -40,9 +38,17 @@ cv32e40p_mult          16000             saed32lvt_tt0p78v25c
 cv32e40p_popcnt        ForQA             saed32lvt_tt0p78v25c
 cv32e40p_ff_one        ForQA             saed32lvt_tt0p78v25c
 cv32e40p_alu_div       8000              saed32lvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_0
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_1
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_2
+                       8000              saed32lvt_tt0p78v25c
 cv32e40p_load_store_unit_DP_OP_63_122_7246_0
                        8000              saed32lvt_tt0p78v25c
 cv32e40p_mult_DP_OP_98_124_2021_0
+                       8000              saed32lvt_tt0p78v25c
+cv32e40p_mult_DP_OP_97_123_4453_0
                        8000              saed32lvt_tt0p78v25c
 cv32e40p_alu_DW01_add_0
                        ForQA             saed32lvt_tt0p78v25c
@@ -54,23 +60,15 @@ cv32e40p_alu_div_DW01_sub_0
                        ForQA             saed32lvt_tt0p78v25c
 cv32e40p_popcnt_DP_OP_94_125_7206_0
                        ForQA             saed32lvt_tt0p78v25c
-cv32e40p_mult_DP_OP_95_131_2234_0
+cv32e40p_if_stage_DW01_add_0
+                       ForQA             saed32lvt_tt0p78v25c
+cv32e40p_aligner_DP_OP_75_127_4091_0
+                       ForQA             saed32lvt_tt0p78v25c
+cv32e40p_mult_DP_OP_95_131_2765_0
                        8000              saed32lvt_tt0p78v25c
-cv32e40p_mult_DP_OP_96_132_3293_0
+cv32e40p_mult_DP_OP_96_132_8503_0
                        8000              saed32lvt_tt0p78v25c
-cv32e40p_alu_div_DP_OP_19_133_8438_1
-                       8000              saed32lvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_4
-                       8000              saed32lvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_6
-                       8000              saed32lvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_8
-                       8000              saed32lvt_tt0p78v25c
-cv32e40p_aligner_DP_OP_75_127_9190_1
-                       8000              saed32lvt_tt0p78v25c
-cv32e40p_mult_DP_OP_97_123_4453_3
-                       8000              saed32lvt_tt0p78v25c
-cv32e40p_if_stage_DW01_add_2
+cv32e40p_alu_div_DP_OP_19_133_1534_0
                        8000              saed32lvt_tt0p78v25c
 
 
@@ -89,11 +87,11 @@ i - Including register clock pin internal power
 
 
   Cell Internal Power  =   0.0000 uW    (0%)
-  Net Switching Power  = 660.6603 uW  (100%)
+  Net Switching Power  = 627.9377 uW  (100%)
                          ---------
-Total Dynamic Power    = 660.6603 uW  (100%)
+Total Dynamic Power    = 627.9377 uW  (100%)
 
-Cell Leakage Power     =   1.1116 mW
+Cell Leakage Power     =   1.0364 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -102,10 +100,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000          657.8368        8.9891e+08        1.5567e+03  (  87.84%)  i
-register           0.0000            1.6754        1.2779e+08          129.4620  (   7.30%)
+clock_network      0.0000          626.0013        8.5609e+08        1.4821e+03  (  89.05%)  i
+register           0.0000            1.4350        1.2767e+08          129.1096  (   7.76%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.0000            1.1457        8.4909e+07           86.0551  (   4.86%)
+combinational      0.0000            0.4973        5.2603e+07           53.1002  (   3.19%)
 --------------------------------------------------------------------------------------------------
-Total              0.0000 uW       660.6579 uW     1.1116e+09 pW     1.7723e+03 uW
+Total              0.0000 uW       627.9337 uW     1.0364e+09 pW     1.6643e+03 uW
 1

@@ -6,9 +6,9 @@ Warning: Design has unannotated black box outputs. (PWR-428)
 ****************************************
 Report : power
         -analysis_effort low
-Design : cv32e40p_tb_wrapper
+Design : cv32e40p_top
 Version: T-2022.03-SP3
-Date   : Sat May 24 15:16:12 2025
+Date   : Sat May 24 22:14:30 2025
 ****************************************
 
 
@@ -22,16 +22,14 @@ Wire Load Model Mode: enclosed
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-cv32e40p_tb_wrapper    70000             saed32hvt_tt0p78v25c
-cv32e40p_top           70000             saed32hvt_tt0p78v25c
-cv32e40p_core          70000             saed32hvt_tt0p78v25c
+cv32e40p_top           35000             saed32hvt_tt0p78v25c
+cv32e40p_core          35000             saed32hvt_tt0p78v25c
 cv32e40p_sleep_unit    ForQA             saed32hvt_tt0p78v25c
 cv32e40p_if_stage      8000              saed32hvt_tt0p78v25c
 cv32e40p_ex_stage      35000             saed32hvt_tt0p78v25c
 cv32e40p_load_store_unit
                        8000              saed32hvt_tt0p78v25c
-cv32e40p_cs_registers  16000             saed32hvt_tt0p78v25c
-cv32e40p_clock_gate    ForQA             saed32hvt_tt0p78v25c
+cv32e40p_cs_registers  8000              saed32hvt_tt0p78v25c
 cv32e40p_aligner       8000              saed32hvt_tt0p78v25c
 cv32e40p_compressed_decoder
                        8000              saed32hvt_tt0p78v25c
@@ -40,6 +38,12 @@ cv32e40p_mult          16000             saed32hvt_tt0p78v25c
 cv32e40p_popcnt        ForQA             saed32hvt_tt0p78v25c
 cv32e40p_ff_one        ForQA             saed32hvt_tt0p78v25c
 cv32e40p_alu_div       8000              saed32hvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_0
+                       8000              saed32hvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_1
+                       8000              saed32hvt_tt0p78v25c
+cv32e40p_cs_registers_DW01_inc_2
+                       8000              saed32hvt_tt0p78v25c
 cv32e40p_load_store_unit_DP_OP_63_122_7246_0
                        8000              saed32hvt_tt0p78v25c
 cv32e40p_mult_DP_OP_98_124_2021_0
@@ -58,19 +62,13 @@ cv32e40p_popcnt_DP_OP_94_125_7206_0
                        ForQA             saed32hvt_tt0p78v25c
 cv32e40p_if_stage_DW01_add_0
                        ForQA             saed32hvt_tt0p78v25c
-cv32e40p_aligner_DP_OP_75_127_9190_0
+cv32e40p_aligner_DP_OP_75_127_4091_0
                        ForQA             saed32hvt_tt0p78v25c
-cv32e40p_mult_DP_OP_95_131_2234_0
+cv32e40p_mult_DP_OP_95_131_2765_0
                        8000              saed32hvt_tt0p78v25c
-cv32e40p_mult_DP_OP_96_132_3293_0
+cv32e40p_mult_DP_OP_96_132_8503_0
                        8000              saed32hvt_tt0p78v25c
-cv32e40p_alu_div_DP_OP_19_133_8438_1
-                       8000              saed32hvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_3
-                       8000              saed32hvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_4
-                       8000              saed32hvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_5
+cv32e40p_alu_div_DP_OP_19_133_1534_0
                        8000              saed32hvt_tt0p78v25c
 
 
@@ -89,11 +87,11 @@ i - Including register clock pin internal power
 
 
   Cell Internal Power  =   0.0000 uW    (0%)
-  Net Switching Power  = 586.7938 uW  (100%)
+  Net Switching Power  = 582.5110 uW  (100%)
                          ---------
-Total Dynamic Power    = 586.7938 uW  (100%)
+Total Dynamic Power    = 582.5110 uW  (100%)
 
-Cell Leakage Power     =   1.0839 mW
+Cell Leakage Power     =   1.0071 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -102,10 +100,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000          584.9388        8.4984e+08        1.4348e+03  (  85.88%)  i
-register           0.0000            1.4233        1.2779e+08          129.2099  (   7.73%)
+clock_network      0.0000          580.7908        8.2649e+08        1.4073e+03  (  88.53%)  i
+register           0.0000            1.2795        1.2767e+08          128.9541  (   8.11%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.0000            0.4290        1.0630e+08          106.7293  (   6.39%)
+combinational      0.0000            0.4389        5.2898e+07           53.3364  (   3.36%)
 --------------------------------------------------------------------------------------------------
-Total              0.0000 uW       586.7911 uW     1.0839e+09 pW     1.6707e+03 uW
+Total              0.0000 uW       582.5092 uW     1.0071e+09 pW     1.5896e+03 uW
 1

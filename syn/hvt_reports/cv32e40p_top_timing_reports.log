@@ -1,4 +1,7 @@
-Warning: Design 'cv32e40p_tb_wrapper' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'cv32e40p_top' has '4' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Changed wire load model for 'cv32e40p_cs_registers' from '16000' to '8000'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_core' from '70000' to '35000'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_top' from '70000' to '35000'. (OPT-170)
 Information: Updating design information... (UID-85)
  
 ****************************************
@@ -6,156 +9,52 @@ Report : timing
         -path full
         -delay max
         -max_paths 1
-Design : cv32e40p_tb_wrapper
+Design : cv32e40p_top
 Version: T-2022.03-SP3
-Date   : Sat May 24 15:16:11 2025
+Date   : Sat May 24 22:14:28 2025
 ****************************************
 
 Operating Conditions: tt0p78v25c   Library: saed32hvt_tt0p78v25c
 Wire Load Model Mode: enclosed
 
-  Startpoint: cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_CS_reg_2_
+  Startpoint: core_i/sleep_unit_i/fetch_enable_q_reg
               (rising edge-triggered flip-flop clocked by clk_i)
-  Endpoint: cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_carry_q_reg
+  Endpoint: core_i/sleep_unit_i/fetch_enable_q_reg
             (rising edge-triggered flip-flop clocked by clk_i)
   Path Group: clk_i
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  cv32e40p_core      70000                 saed32hvt_tt0p78v25c
-  cv32e40p_mult      16000                 saed32hvt_tt0p78v25c
-  cv32e40p_mult_DP_OP_97_123_4453_0
-                     8000                  saed32hvt_tt0p78v25c
+  cv32e40p_top       35000                 saed32hvt_tt0p78v25c
+  cv32e40p_sleep_unit
+                     ForQA                 saed32hvt_tt0p78v25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk_i (rise edge)                                 0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_CS_reg_2_/CLK (DFFARX1_HVT)
+  core_i/sleep_unit_i/fetch_enable_q_reg/CLK (DFFARX1_HVT)
                                                           0.00       0.00 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_CS_reg_2_/QN (DFFARX1_HVT)
+  core_i/sleep_unit_i/fetch_enable_q_reg/QN (DFFARX1_HVT)
                                                           0.23       0.23 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U440/Y (NAND3X0_HVT)
-                                                          0.14       0.37 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U447/Y (NAND2X0_HVT)
-                                                          0.11       0.48 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U464/Y (OA21X1_HVT)
-                                                          0.16       0.64 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U459/Y (NAND2X4_HVT)
-                                                          0.18       0.82 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U438/Y (OAI22X1_HVT)
-                                                          0.22       1.05 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/I2[0] (cv32e40p_mult_DP_OP_97_123_4453_0)
-                                                          0.00       1.05 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U704/C1 (HADDX1_HVT)
-                                                          0.15       1.19 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U690/CO (FADDX1_HVT)
-                                                          0.22       1.41 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U865/Y (NAND2X0_HVT)
-                                                          0.09       1.50 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U868/Y (NAND3X0_HVT)
-                                                          0.09       1.60 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U688/CO (FADDX1_HVT)
-                                                          0.22       1.82 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U687/CO (FADDX1_HVT)
-                                                          0.22       2.04 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U686/CO (FADDX1_HVT)
-                                                          0.23       2.27 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U875/Y (NAND2X0_HVT)
-                                                          0.11       2.38 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U878/Y (NAND3X0_HVT)
-                                                          0.10       2.47 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U684/CO (FADDX1_HVT)
-                                                          0.22       2.69 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U683/CO (FADDX1_HVT)
-                                                          0.23       2.92 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U854/Y (NAND2X0_HVT)
-                                                          0.10       3.03 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U856/Y (NAND3X0_HVT)
-                                                          0.10       3.13 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U681/CO (FADDX1_HVT)
-                                                          0.22       3.35 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U680/S (FADDX1_HVT)
-                                                          0.32       3.67 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U718/Y (INVX1_HVT)
-                                                          0.08       3.75 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U923/Y (OA22X1_HVT)
-                                                          0.16       3.90 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U800/Y (OA221X1_HVT)
-                                                          0.17       4.07 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U793/Y (XNOR2X2_HVT)
-                                                          0.23       4.30 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U111/CO (FADDX1_HVT)
-                                                          0.24       4.54 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U110/CO (FADDX1_HVT)
-                                                          0.22       4.77 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U109/CO (FADDX1_HVT)
-                                                          0.22       4.99 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U108/CO (FADDX1_HVT)
-                                                          0.22       5.22 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U107/CO (FADDX1_HVT)
-                                                          0.22       5.44 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U106/CO (FADDX1_HVT)
-                                                          0.22       5.66 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U105/CO (FADDX1_HVT)
-                                                          0.22       5.89 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U104/CO (FADDX1_HVT)
-                                                          0.22       6.11 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U103/CO (FADDX1_HVT)
-                                                          0.22       6.34 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U863/Y (NAND2X0_HVT)
-                                                          0.09       6.42 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U864/Y (NAND3X0_HVT)
-                                                          0.09       6.52 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U101/CO (FADDX1_HVT)
-                                                          0.22       6.73 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U100/CO (FADDX1_HVT)
-                                                          0.22       6.96 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U871/Y (NAND2X0_HVT)
-                                                          0.09       7.04 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U873/Y (NAND3X0_HVT)
-                                                          0.09       7.14 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U98/CO (FADDX1_HVT)
-                                                          0.22       7.35 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U97/CO (FADDX1_HVT)
-                                                          0.22       7.58 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U96/CO (FADDX1_HVT)
-                                                          0.22       7.80 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U882/Y (NAND2X0_HVT)
-                                                          0.09       7.89 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U883/Y (NAND3X0_HVT)
-                                                          0.09       7.98 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U886/Y (NAND2X0_HVT)
-                                                          0.09       8.08 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U888/Y (NAND3X0_HVT)
-                                                          0.09       8.17 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U93/CO (FADDX1_HVT)
-                                                          0.22       8.39 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U92/CO (FADDX1_HVT)
-                                                          0.22       8.61 r
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/U809/Y (XOR3X2_HVT)
-                                                          0.20       8.81 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/DP_OP_97_123_4453/O1[32] (cv32e40p_mult_DP_OP_97_123_4453_0)
-                                                          0.00       8.81 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/U221/Y (AO22X1_HVT)
-                                                          0.17       8.97 f
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_carry_q_reg/D (DFFARX1_HVT)
-                                                          0.01       8.98 f
-  data arrival time                                                  8.98
+  core_i/sleep_unit_i/U3/Y (NAND2X0_HVT)                  0.11       0.34 f
+  core_i/sleep_unit_i/fetch_enable_q_reg/D (DFFARX1_HVT)
+                                                          0.01       0.35 f
+  data arrival time                                                  0.35
 
   clock clk_i (rise edge)                                 2.00       2.00
   clock network delay (ideal)                             0.00       2.00
   clock uncertainty                                      -0.20       1.80
-  cv32e40p_top_i/core_i/ex_stage_i/mult_i/mulh_carry_q_reg/CLK (DFFARX1_HVT)
+  core_i/sleep_unit_i/fetch_enable_q_reg/CLK (DFFARX1_HVT)
                                                           0.00       1.80 r
-  library setup time                                     -0.13       1.67
-  data required time                                                 1.67
+  library setup time                                     -0.14       1.66
+  data required time                                                 1.66
   --------------------------------------------------------------------------
-  data required time                                                 1.67
-  data arrival time                                                 -8.98
+  data required time                                                 1.66
+  data arrival time                                                 -0.35
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -7.31
+  slack (MET)                                                        1.30
 
 
 1
