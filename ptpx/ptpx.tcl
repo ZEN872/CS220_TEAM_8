@@ -16,8 +16,8 @@ set power_enable_static true
 set HOME "/home/cegrad/imaga008"
 set DESIGN_NAME "cv32e40p_top"
 set SYN_DIR "$HOME/CS220_TEAM_8/syn"
-set REPORT_DIR "$SYN_DIR/reports"
-set VCD_FILE "$HOME/CORE_ONLY_RTL/sim/cv32e40p_top_tb.vcd"
+set REPORT_DIR "$SYN_DIR/rvt_reports"
+set VCD_FILE "$HOME/CS220_TEAM_8/sim/cv32e40p_top_tb.vcd"
 
 #------------------------------------------------------------
 # Library and Search Paths

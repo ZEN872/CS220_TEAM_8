@@ -1,8 +1,227 @@
 Warning: Design 'cv32e40p_top' has '4' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Information: Changed wire load model for 'cv32e40p_cs_registers' from '16000' to '8000'. (OPT-170)
-Information: Changed wire load model for 'cv32e40p_core' from '70000' to '35000'. (OPT-170)
-Information: Changed wire load model for 'cv32e40p_top' from '70000' to '35000'. (OPT-170)
+Error: Could not read the following target libraries:
+/usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32lrvt_tt0p78v25c.db 
+ (UIO-3)
+Information: Changed wire load model for 'cv32e40p_cs_registers' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_load_store_unit' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_alu_div' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_ff_one' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_popcnt' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_alu' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_ex_stage' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_compressed_decoder' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_aligner' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_sleep_unit' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'cv32e40p_core' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'astr' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width64' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_64_1_64' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width64' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_64_1_64' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width64' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_64_1_64' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_32_1_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_34_32_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_33_34_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_17_17_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_21_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_17_17_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_17_17_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_20_18_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_19_18_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_18_18_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_9_9_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_9_9_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_9_9_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_9_9_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_17_2_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_34_5_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_leftsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASH_UNS_UNS_OP_32_5_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_32_31_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_36_36_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_6_1_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_5_1_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_5_5_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_UNS_UNS_OP_63_5_63' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_6_1_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_32_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_1_32_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_leftsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASH_UNS_UNS_OP_32_5_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_leftsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASH_UNS_UNS_OP_32_5_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_5_5_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_4_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_4_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_3_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_3_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_3_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_3_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_1_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_TC_OP_9_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_TC_OP_9_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_TC_OP_9_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_TC_OP_9_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_9_3_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_9_3_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_9_3_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_9_3_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_17_4_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW_rightsh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ASHR_TC_UNS_OP_17_4_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_32_3_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_32_3_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_32_2_32' from '(none)' to 'ForQA'. (OPT-170)
 Information: Updating design information... (UID-85)
+Warning: Design 'cv32e40p_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
  
 ****************************************
 Report : timing
@@ -11,50 +230,43 @@ Report : timing
         -max_paths 1
 Design : cv32e40p_top
 Version: T-2022.03-SP3
-Date   : Sat May 24 21:54:57 2025
+Date   : Sat May 24 22:09:52 2025
 ****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
 
 Operating Conditions: tt0p78v25c   Library: saed32rvt_tt0p78v25c
 Wire Load Model Mode: enclosed
 
-  Startpoint: core_i/sleep_unit_i/fetch_enable_q_reg
+  Startpoint: core_i/sleep_unit_i/core_busy_q_reg
               (rising edge-triggered flip-flop clocked by clk_i)
-  Endpoint: core_i/sleep_unit_i/fetch_enable_q_reg
-            (rising edge-triggered flip-flop clocked by clk_i)
-  Path Group: clk_i
+  Endpoint: core_sleep_o
+            (output port)
+  Path Group: (none)
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  cv32e40p_top       35000                 saed32rvt_tt0p78v25c
+  cv32e40p_top       ForQA                 saed32rvt_tt0p78v25c
   cv32e40p_sleep_unit
                      ForQA                 saed32rvt_tt0p78v25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
-  clock clk_i (rise edge)                                 0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  core_i/sleep_unit_i/fetch_enable_q_reg/CLK (DFFARX1_RVT)
+  core_i/sleep_unit_i/core_busy_q_reg/clocked_on (**SEQGEN**)
                                                           0.00       0.00 r
-  core_i/sleep_unit_i/fetch_enable_q_reg/QN (DFFARX1_RVT)
-                                                          0.12       0.12 f
-  core_i/sleep_unit_i/U3/Y (NAND2X0_RVT)                  0.08       0.20 r
-  core_i/sleep_unit_i/fetch_enable_q_reg/D (DFFARX1_RVT)
-                                                          0.01       0.21 r
-  data arrival time                                                  0.21
-
-  clock clk_i (rise edge)                                 2.00       2.00
-  clock network delay (ideal)                             0.00       2.00
-  clock uncertainty                                      -0.20       1.80
-  core_i/sleep_unit_i/fetch_enable_q_reg/CLK (DFFARX1_RVT)
-                                                          0.00       1.80 r
-  library setup time                                     -0.08       1.72
-  data required time                                                 1.72
+  core_i/sleep_unit_i/core_busy_q_reg/Q (**SEQGEN**)      0.00       0.00 f
+  core_i/sleep_unit_i/C33/Z (GTECH_OR2)                   0.00       0.00 f
+  core_i/sleep_unit_i/C32/Z (GTECH_AND2)                  0.00       0.01 f
+  core_i/sleep_unit_i/I_1/Z (GTECH_NOT)                   0.00       0.01 r
+  core_i/sleep_unit_i/C34/Z (GTECH_AND2)                  0.00       0.02 r
+  core_i/sleep_unit_i/core_sleep_o (cv32e40p_sleep_unit)
+                                                          0.00       0.02 r
+  core_i/core_sleep_o (cv32e40p_core)                     0.00       0.02 r
+  core_sleep_o (out)                                      0.00       0.02 r
+  data arrival time                                                  0.02
   --------------------------------------------------------------------------
-  data required time                                                 1.72
-  data arrival time                                                 -0.21
-  --------------------------------------------------------------------------
-  slack (MET)                                                        1.50
+  (Path is unconstrained)
 
 
 1

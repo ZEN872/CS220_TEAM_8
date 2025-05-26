@@ -1,0 +1,5 @@
+Information: Running time_based power analysis... (PWR-601)
+Information: Reading vcd file '/home/cegrad/imaga008/CS220_TEAM_8/sim/cv32e40p_top_tb.vcd'
+Error: Can not find any event in the event file.  (PWR-248)
+Error: Power is not calculated. Please run update_power before report_power.  (PRPT-115)
+0

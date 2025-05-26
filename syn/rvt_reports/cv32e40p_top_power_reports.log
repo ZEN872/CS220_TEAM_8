@@ -8,13 +8,13 @@ Report : power
         -analysis_effort low
 Design : cv32e40p_top
 Version: T-2022.03-SP3
-Date   : Sat May 24 21:54:59 2025
+Date   : Sat May 24 22:09:54 2025
 ****************************************
 
 
 Library(s) Used:
 
-    saed32rvt_tt0p78v25c (File: /usr/local/synopsys/pdk/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_tt0p78v25c.db)
+    gtech (File: /usr/local/synopsys/syn/T-2022.03-SP3/libraries/syn/gtech.db)
 
 
 Operating Conditions: tt0p78v25c   Library: saed32rvt_tt0p78v25c
@@ -22,54 +22,162 @@ Wire Load Model Mode: enclosed
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-cv32e40p_top           35000             saed32rvt_tt0p78v25c
-cv32e40p_core          35000             saed32rvt_tt0p78v25c
+cv32e40p_top           ForQA             saed32rvt_tt0p78v25c
+cv32e40p_core          ForQA             saed32rvt_tt0p78v25c
 cv32e40p_sleep_unit    ForQA             saed32rvt_tt0p78v25c
-cv32e40p_if_stage      8000              saed32rvt_tt0p78v25c
-cv32e40p_ex_stage      35000             saed32rvt_tt0p78v25c
+cv32e40p_if_stage      ForQA             saed32rvt_tt0p78v25c
+cv32e40p_ex_stage      ForQA             saed32rvt_tt0p78v25c
 cv32e40p_load_store_unit
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_cs_registers  8000              saed32rvt_tt0p78v25c
-cv32e40p_aligner       8000              saed32rvt_tt0p78v25c
+                       ForQA             saed32rvt_tt0p78v25c
+cv32e40p_cs_registers  ForQA             saed32rvt_tt0p78v25c
+cv32e40p_aligner       ForQA             saed32rvt_tt0p78v25c
 cv32e40p_compressed_decoder
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_alu           16000             saed32rvt_tt0p78v25c
-cv32e40p_mult          16000             saed32rvt_tt0p78v25c
+                       ForQA             saed32rvt_tt0p78v25c
+cv32e40p_alu           ForQA             saed32rvt_tt0p78v25c
+cv32e40p_mult          ForQA             saed32rvt_tt0p78v25c
 cv32e40p_popcnt        ForQA             saed32rvt_tt0p78v25c
 cv32e40p_ff_one        ForQA             saed32rvt_tt0p78v25c
-cv32e40p_alu_div       8000              saed32rvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_0
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_1
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_cs_registers_DW01_inc_2
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_load_store_unit_DP_OP_63_122_7246_0
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_mult_DP_OP_98_124_2021_0
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_mult_DP_OP_97_123_4453_0
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_alu_DW01_add_0
+cv32e40p_alu_div       ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_32_3_32    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*SUB_UNS_OP_2_2_2      ForQA             saed32rvt_tt0p78v25c
+DW01_sub_width2        ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_32_32_32   ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*SUB_UNS_OP_2_1_2      ForQA             saed32rvt_tt0p78v25c
+DW01_dec_width2        ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_2_1_2      ForQA             saed32rvt_tt0p78v25c
+DW01_inc_width2        ForQA             saed32rvt_tt0p78v25c
+*MULT_UNS_OP_32_1_32   ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+*EQ_UNS_OP_32_32_1     ForQA             saed32rvt_tt0p78v25c
+DW01_cmp6_width32      ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_64_1_64    ForQA             saed32rvt_tt0p78v25c
+DW01_inc_width64       ForQA             saed32rvt_tt0p78v25c
+DW01_inc_width64       ForQA             saed32rvt_tt0p78v25c
+DW01_inc_width64       ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_32_2_32    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_36_36_37    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width37       ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_32_31_32   ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*ASHR_TC_UNS_OP_17_4_17
                        ForQA             saed32rvt_tt0p78v25c
-cv32e40p_alu_DW01_add_1
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+*ASHR_TC_UNS_OP_9_3_9  ForQA             saed32rvt_tt0p78v25c
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+*ASHR_UNS_UNS_OP_63_5_63
                        ForQA             saed32rvt_tt0p78v25c
-cv32e40p_alu_div_DW_cmp_0
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_alu_div_DW01_sub_0
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+DW01_cmp6_width32      ForQA             saed32rvt_tt0p78v25c
+*EQ_UNS_OP_8_8_1       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp6_width8       ForQA             saed32rvt_tt0p78v25c
+*GT_TC_OP_9_9_1        ForQA             saed32rvt_tt0p78v25c
+DW01_cmp2_width9       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp6_width8       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp2_width9       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp6_width8       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp2_width9       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp6_width8       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp2_width9       ForQA             saed32rvt_tt0p78v25c
+*SUB_UNS_OP_5_5_5      ForQA             saed32rvt_tt0p78v25c
+DW01_sub_width5        ForQA             saed32rvt_tt0p78v25c
+*SUB_UNS_OP_5_1_6      ForQA             saed32rvt_tt0p78v25c
+DW01_dec_width6        ForQA             saed32rvt_tt0p78v25c
+*ASH_UNS_UNS_OP_32_5_32
                        ForQA             saed32rvt_tt0p78v25c
-cv32e40p_popcnt_DP_OP_94_125_7206_0
+DW_leftsh              ForQA             saed32rvt_tt0p78v25c
+DW_leftsh              ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_6_1_6      ForQA             saed32rvt_tt0p78v25c
+DW01_add_width6        ForQA             saed32rvt_tt0p78v25c
+DW_leftsh              ForQA             saed32rvt_tt0p78v25c
+*MULT_TC_OP_17_17_34   ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_33_34_34    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width34       ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_34_32_34    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width34       ForQA             saed32rvt_tt0p78v25c
+*ASHR_TC_UNS_OP_34_5_34
                        ForQA             saed32rvt_tt0p78v25c
-cv32e40p_if_stage_DW01_add_0
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_32_32_32    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*MULT_TC_OP_32_32_32   ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*MULT_TC_OP_9_9_18     ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_18_18_19    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width19       ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_19_18_20    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width20       ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_20_18_21    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width21       ForQA             saed32rvt_tt0p78v25c
+*ADD_TC_OP_21_32_32    ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*MULT_TC_OP_17_17_32   ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+DW02_mult              ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*ASHR_TC_UNS_OP_17_2_17
                        ForQA             saed32rvt_tt0p78v25c
-cv32e40p_aligner_DP_OP_75_127_4091_0
-                       ForQA             saed32rvt_tt0p78v25c
-cv32e40p_mult_DP_OP_95_131_2765_0
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_mult_DP_OP_96_132_8503_0
-                       8000              saed32rvt_tt0p78v25c
-cv32e40p_alu_div_DP_OP_19_133_1534_0
-                       8000              saed32rvt_tt0p78v25c
+DW_rightsh             ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_1_1_2      ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width2        ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_2_2_3      ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width3        ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_3_3_4      ForQA             saed32rvt_tt0p78v25c
+DW01_add_width4        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width4        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width4        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width4        ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_4_4_5      ForQA             saed32rvt_tt0p78v25c
+DW01_add_width5        ForQA             saed32rvt_tt0p78v25c
+DW01_add_width5        ForQA             saed32rvt_tt0p78v25c
+*ADD_UNS_OP_5_5_6      ForQA             saed32rvt_tt0p78v25c
+DW01_add_width6        ForQA             saed32rvt_tt0p78v25c
+*SUB_UNS_OP_1_32_32    ForQA             saed32rvt_tt0p78v25c
+DW01_sub_width32       ForQA             saed32rvt_tt0p78v25c
+DW01_cmp6_width32      ForQA             saed32rvt_tt0p78v25c
+*GT_UNS_OP_32_32_1     ForQA             saed32rvt_tt0p78v25c
+DW01_cmp2_width32      ForQA             saed32rvt_tt0p78v25c
+DW01_add_width32       ForQA             saed32rvt_tt0p78v25c
+*SUB_UNS_OP_32_32_32   ForQA             saed32rvt_tt0p78v25c
+DW01_sub_width32       ForQA             saed32rvt_tt0p78v25c
+*SUB_UNS_OP_6_1_6      ForQA             saed32rvt_tt0p78v25c
+DW01_dec_width6        ForQA             saed32rvt_tt0p78v25c
 
 
 Global Operating Voltage = 0.78 
@@ -87,11 +195,11 @@ i - Including register clock pin internal power
 
 
   Cell Internal Power  =   0.0000 uW    (0%)
-  Net Switching Power  = 605.0551 uW  (100%)
+  Net Switching Power  = 279.6887 uW  (100%)
                          ---------
-Total Dynamic Power    = 605.0551 uW  (100%)
+Total Dynamic Power    = 279.6887 uW  (100%)
 
-Cell Leakage Power     =   1.0109 mW
+Cell Leakage Power     =   0.0000 pW
 
 
                  Internal         Switching           Leakage            Total
@@ -100,10 +208,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000          603.2601        8.2973e+08        1.4330e+03  (  88.68%)  i
-register           0.0000            1.3413        1.2767e+08          129.0159  (   7.98%)
+clock_network      0.0000          278.1348            0.0000          278.1348  (  99.44%)  i
+register           0.0000            1.3378            0.0000            1.3378  (   0.48%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.0000            0.4520        5.3493e+07           53.9448  (   3.34%)
+combinational      0.0000            0.2160            0.0000            0.2160  (   0.08%)
 --------------------------------------------------------------------------------------------------
-Total              0.0000 uW       605.0534 uW     1.0109e+09 pW     1.6160e+03 uW
+Total              0.0000 uW       279.6886 uW         0.0000 pW       279.6886 uW
 1
