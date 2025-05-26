@@ -1,11 +1,13 @@
 # CS220_TEAM_8
 
+Code taken from this repo: https://github.com/openhwgroup/cv32e40p  
+
 ## How to run Sim:
 
 - Go to the sim directory 
-- Find the directory of your folder and then use the command: DESIGN_RTL_DIR= "Your RTL directory"
+- Find the directory of your folder and then use the command: export DESIGN_RTL_DIR= "Your RTL directory"
 
-**Example:**  DESIGN_RTL_DIR=/home/cegrad/imaga008/CS220_TEAM_8/rtl/
+**Example:**  export DESIGN_RTL_DIR=/home/cegrad/imaga008/CS220_TEAM_8/rtl/
 
 -   Find the directory of your "cv32e40p_fpu_manifest.flist"
 
