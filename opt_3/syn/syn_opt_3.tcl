@@ -3,7 +3,7 @@
 #-------------------------------------------
 
 # Set environment and design variables
-set HOME "/home/cegrad/imaga008/CS220_TEAM_8"
+set HOME "/home/cegrad/k002/CS220_TEAM_8"
 set DESIGN_NAME "cv32e40p_top"
 set DESIGN_RTL_DIR "${HOME}/rtl"
 set REPORT_DIR "${HOME}/syn/rvt_reports"
@@ -92,10 +92,23 @@ read_sverilog ${DESIGN_RTL_DIR}/cv32e40p_fp_wrapper.sv
 read_sverilog ${DESIGN_RTL_DIR}/cv32e40p_top.sv 
 #read_sverilog ${DESIGN_RTL_DIR}/cv32e40p_top_moded.sv
 
-
 #read_sverilog ${DESIGN_RTL_DIR}/../bhv/cv32e40p_sim_clock_gate.sv
 #read_sverilog ${DESIGN_RTL_DIR}/../bhv/include/cv32e40p_tracer_pkg.sv
 #read_sverilog ${DESIGN_RTL_DIR}/../bhv/cv32e40p_tb_wrapper.sv
+
+#=== Added for AVFS Optimization ===
+# Clock divider for dynamic clock generation controlled by AVFS.
+read_sverilog ${DESIGN_RTL_DIR}/clock_divider.sv
+# AVFS controller for adaptive voltage and frequency scaling optimization.
+read_sverilog ${DESIGN_RTL_DIR}/avfs_controller_optimization-2.sv
+
+#=== Added for TCM Partitioning Optimization ===
+# TCM Partition Controller to separate Instruction (I-TCM) and Data (D-TCM) memories.
+read_sverilog ${DESIGN_RTL_DIR}/tcm_partition_ctrl.sv
+# I-TCM memory model (behavioral model; modify for synthesis as needed)
+read_sverilog ${DESIGN_RTL_DIR}/i_tcm.sv
+# D-TCM memory model (behavioral model; modify for synthesis as needed)
+read_sverilog ${DESIGN_RTL_DIR}/d_tcm.sv
 
 #------------------------------------------------------------
 # Elaborate and Link Design
