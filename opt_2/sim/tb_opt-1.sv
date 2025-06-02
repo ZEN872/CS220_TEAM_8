@@ -34,7 +34,12 @@ module tb_avfs;
     .apb_wdata(apb_wdata),
     .apb_rdata(apb_rdata)
   );
-
+  
+ initial begin
+    $dumpfile("cv32e40p_top_tb.vcd");
+    $dumpvars(0, tb_avfs);
+  end
+  
   // Monitoring results.
   initial begin
     $monitor("Time=%0t, Activity=%b, Freq_SEL=%h", $time, activity, freq_sel);
