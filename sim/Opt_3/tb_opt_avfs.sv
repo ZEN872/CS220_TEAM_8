@@ -41,7 +41,7 @@ module tb_avfs;
 
     // VCD Dump
   initial begin
-    $dumpfile("u_avfs_top_tb.vcd");
+    $dumpfile("cv32e40p_top_tb.vcd";
     $dumpvars(0, u_avfs);
   end
 
