@@ -49,5 +49,5 @@ Code taken from this repo: https://github.com/openhwgroup/cv32e40p
 
 **Example:** *source baseline_primetime.tcl*
 
-Then exit the pt shell; if successful, the prime time reports would have been generated. 
+- Then exit the pt shell; if successful, the prime time reports would have been generated. 
   
