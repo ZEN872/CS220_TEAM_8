@@ -39,6 +39,12 @@ module tb_avfs;
     .apb_rdata(apb_rdata)
   );
 
+    // VCD Dump
+  initial begin
+    $dumpfile("u_avfs_top_tb.vcd");
+    $dumpvars(0, u_avfs);
+  end
+
   // Monitoring results.
   initial begin
     $monitor("Time=%0t, Activity=%b, Freq_SEL=%h", $time, activity, freq_sel);
