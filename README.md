@@ -2,7 +2,7 @@
 
 Code taken from this repo: https://github.com/openhwgroup/cv32e40p  
 
-## How to run Sim:
+## How to run Simulation:
 
 - Go to the sim directory 
 - Find the directory of your folder and then use the command: export DESIGN_RTL_DIR= "Your RTL directory"
@@ -26,7 +26,7 @@ Code taken from this repo: https://github.com/openhwgroup/cv32e40p
 - sudo apt install gtkwave
 
 
-## How to run syn: 
+## How to run Synthesis : 
 - Go to the syn directory 
 - Edit the syn.tcl to match your home directory. **( You will be editing the line that starts with **SET HOME** [then some directoy)] )** 
 
@@ -36,4 +36,13 @@ Code taken from this repo: https://github.com/openhwgroup/cv32e40p
 - Then, once in the dc shell enter the command: **source syn.tcl**
 
 **WARNING: IF you get warnings that stop the syn, then just press the ENTER key repeatedly until the warning goes away**
+
+## How to run Primetime:
+
+# To run the prime time:
+- You would have already run the simulation script **(Generate a .vcd file)**
+- You would have already run the synthesis script file **(Generate a synthesis.v file)**
+  
+- Once these files are made, you have to enter the ptpx directory
+- Then enter the pt shell by using the command : *pt_shell* 
   
