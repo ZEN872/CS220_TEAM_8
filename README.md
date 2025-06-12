@@ -47,7 +47,7 @@ Code taken from this repo: https://github.com/openhwgroup/cv32e40p
 - Then enter the pt shell by using the command : *pt_shell*
 - Then enter the command: *source "name_of_primetime_script.tcl"*
 
-   **Example:** *source baseline_primetime.tcl*
+**Example:** *source baseline_primetime.tcl*
 
 Then exit the pt shell; if successful, the prime time reports would have been generated. 
   
