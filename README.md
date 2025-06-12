@@ -39,10 +39,13 @@ Code taken from this repo: https://github.com/openhwgroup/cv32e40p
 
 ## How to run Primetime:
 
-# To run the prime time:
+### To run the prime time:
 - You would have already run the simulation script **(Generate a .vcd file)**
 - You would have already run the synthesis script file **(Generate a synthesis.v file)**
   
 - Once these files are made, you have to enter the ptpx directory
-- Then enter the pt shell by using the command : *pt_shell* 
+- Then enter the pt shell by using the command : *pt_shell*
+- Then enter the command: *source "name_of_primetime_script.tcl"*
+
+   **Example:** *source baseline_primetime.tcl*
   
